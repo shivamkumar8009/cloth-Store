@@ -113,3 +113,36 @@ header {
     width:250px;
 
 }
+
+/* footer*/
+
+.footer_container{
+    padding:30px 0px 40px 0px;
+    background-color: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_columns{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_columns h3 {
+    color:#282c3f;
+    font-size: 14px;
+   margin-bottom: 25px;
+
+}
+.footer_columns a{
+    color:#696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.copyright{
+    color:#94969f;
+    text-align: end;
+    padding: 15px;
+}
