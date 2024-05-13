@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
 
     <header>
         <div class="logo_container">
+            <div class="hamburger_icon">&#9776;</div>
             <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"></a>
         </div>
         <nav class="nav_bar">
@@ -23,11 +26,10 @@
             <a href="#">Studio <sup>New</sup></a>
         </nav>
         <div class="search_bar">
-        <span class="material-symbols-outlined search_icon">
-            search
-        </span> 
-        <input class="search_input" placeholder="Search for products, brands and more">
-
+            <span class="material-symbols-outlined search_icon">
+                search
+            </span>
+            <input class="search_input" placeholder="Search for products, brands and more">
         </div>
         <div class="action_bar">
             <div class="action_container">
@@ -37,9 +39,9 @@
                 <span class="action_name">profile</span>
             </div>
             <div class="action_container">
-            <span class="material-symbols-outlined action_icon">
-                favorite
-            </span>
+                <span class="material-symbols-outlined action_icon">
+                    favorite
+                </span>
                 <span class="action_name">Wishlist</span>
             </div>
             <div class="action_container">
@@ -59,7 +61,7 @@
             <a href="#">
                 <img src="images/offers/1.png" class="sale_item">
             </a>
-            
+    
             <a href="#">
                 <img src="images/offers/2.png" class="sale_item">
             </a>
@@ -99,7 +101,7 @@
             <a href="#">
                 <img src="images/categories/1.jpg" class="sale_item">
             </a>
-        
+    
             <a href="#">
                 <img src="images/categories/2.jpg" class="sale_item">
             </a>
@@ -140,7 +142,7 @@
                 <a href="#">Beauty</a>
                 <a href="#">Gift Card</a>
                 <a href="#">Myntra Insider</a>
-                
+    
             </div>
             <div class="footer_columns">
                 <h3>ONLINE SHOPPING</h3>
@@ -151,7 +153,7 @@
                 <a href="#">Beauty</a>
                 <a href="#">Gift Card</a>
                 <a href="#">Myntra Insider</a>
-            
+    
             </div>
             <div class="footer_columns">
                 <h3>ONLINE SHOPPING</h3>
@@ -162,7 +164,7 @@
                 <a href="#">Beauty</a>
                 <a href="#">Gift Card</a>
                 <a href="#">Myntra Insider</a>
-            
+    
             </div>
         </div>
         <hr>
@@ -171,5 +173,15 @@
         </div>
     </footer>
 
+    <script>
+        const hamburgerIcon = document.querySelector('.hamburger_icon');
+        const navBar = document.querySelector('.nav_bar');
+
+        hamburgerIcon.addEventListener('click', () => {
+            navBar.classList.toggle('show_nav');
+        });
+    </script>
+
 </body>
+
 </html>
